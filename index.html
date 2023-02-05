@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <!-- this is the <head> section; not to be confused with the <header> section -->
-  <head>
+  <!--Head's job is to contain metadata about the document. Not displayed on the page. -->
+    <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Peaecful Web Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     <!--makes the page mobile friendly. IMPORTANT-->
+    <link rel="stylesheet" href="styles/style.css">     <!--enables internal sytling with CSS-->
+    <title>Semantic Web Development</title>
   </head>
 
   <!-- this is a comment; it's different than how to add CSS comments -->
@@ -13,19 +15,23 @@
   <!-- the <body> element comes immediately after the closing </head> -->
 
   <body>
-
     <!-- new section for <header>, which contains <h1>, <a>, and <img> elements -->
     <header>
+      <a href="index.html">
+        <img src="images/semanticlogo.png" alt="Semantic Web Development Logo">
+      </a>
+      <h1 id="title">Learning to build</h1>
     </header>
 
-    <!-- new section for <nav>, which contains <ul> and <li> elements -->
-    <nav>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
+  <!-- new section for <nav>, which contains <ul> and <li> elements -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="github.html">Github</a></li>
+      <li><a href="vscode.html">VSCode</a></li>
+    </ul>
+  </nav>
 
     <!-- the <div> wraps around all elements below except for the <footer> element -->
     <div class="wrapper">
@@ -37,29 +43,21 @@
         <article> element is in its own <section>. In practice, this might be
         redundant; that is, you can either use an <article> or a <section>
         element and may not need both. -->
+
+
+        <hr>
+
         <article id="main_article">
 
         <!-- it's good practice to include a <h2> for each <section> or <article> -->
-        <h2>Lorem ipsum</h2>
+        <h2>Introduction</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Mauris consequat tortor lorem, quis finibus purus placerat
-        vitae. Aenean pharetra blandit imperdiet. Sed efficitur,
-        nunc vitae condimentum ullamcorper, sapien leo iaculis
-        ligula, vitae vestibulum urna purus sed erat. Suspendisse
-        nec leo vel libero tristique blandit quis at est. Aliquam
-        aliquam, dui vel ullamcorper faucibus, augue libero tempor
-        odio, tincidunt ornare sapien erat ac sapien. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Praesent
-        lacinia nibh ut ipsum placerat tempor. Fusce quis vulputate
-        ipsum. Proin nec erat eu lectus accumsan tristique
-        tincidunt eu quam. Aliquam leo metus, aliquam non felis at,
-        dictum iaculis massa. Nam mi ligula, convallis sit amet
-        dolor in, luctus aliquet lorem. Vestibulum consectetur
-        sodales sapien in condimentum. Etiam nec elit purus.
-        Integer eu ullamcorper erat. Aenean aliquet lacus vel neque
-        volutpat, sit amet rhoncus arcu fermentum.</p>
-
+        <p>This course introduces students to web development with the goal of designing a
+        website containing structured and semantic data and that adheres to principles 
+        of usability, accessibility, and inclusion. By the end of this course, 
+        students will acquire skills at planning, developing, organizing, and
+        managing websites in HTML5 and CSS3 and will develop an understanding of
+        basic design principles and project management.</p>
         <p>Phasellus ligula dui, ultrices at mauris congue,
         accumsan tempus leo. Integer gravida felis at arcu pharetra
         porta. Phasellus rhoncus magna vitae lorem egestas, et
@@ -75,33 +73,41 @@
         </article>
 
         <!-- be sure to use alt and title for images -->
-        <figure id="main_fig">
-          <figcaption>
+        <hr><b>Semantic Elements for Document Outlining:</b>
+        <figure id="html5outline"> 
+          <img src="images/html5outline.jpeg" alt="Image of Semantic Elements for Document Outlining">
+          <figcaption> 
+            <!--figcaption element represents a caption or legend describing the rest of the contents of its parent <figure> element. -->
+            <a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">Source: Codeopen.io</a>
           </figcaption>
         </figure>
-
+      
+<hr>
       </section>
 
       <section id="secondary">
 
         <article id="sub_article">
 
-        <h3>Curabitur dignissim</h3>
+        <h3>HTML - Structuring the web</h3>
 
-        <p>Curabitur dignissim nulla neque, sit amet ultricies mi
-        ultrices at. Morbi eget lorem imperdiet, fringilla massa a,
-        placerat magna. Ut sed ligula a massa pharetra viverra.
-        Mauris sodales tincidunt gravida. Cras finibus lacus eget
-        iaculis bibendum. Phasellus ligula dui, ultrices at mauris
-        congue, accumsan tempus leo. Integer gravida felis at arcu
-        pharetra porta. Phasellus rhoncus magna vitae lorem
-        egestas, et tempor nunc posuere. Nulla sagittis justo sit
-        amet nunc rhoncus venenatis. Vivamus ante quam, maximus at
-        lorem eget, porta tristique dui. Nulla non porta elit, quis
-        commodo tortor. Nulla ac eros eu sapien ullamcorper
-        faucibus. Nullam sodales vehicula risus, id malesuada dolor
-        fermentum non. Nulla tempus cursus risus, eu fermentum dui
-        commodo quis.</p>
+        <p>To build websites, you should know about HTML — the fundamental technology used to 
+          define the structure of a webpage. <q><i><b>HTML is used to specify whether your web content 
+          should be recognized as a paragraph, list, heading, link, image, multimedia player, 
+          form, or one of many other available elements or even a new element that you define.</b></i></q>
+        </p>
+
+        <p>
+          After learning HTML, you can then move on to learning about more advanced topics such as: 
+          CSS, and how to use it to style HTML (for example, alter your text size and fonts used, 
+          add borders and drop shadows, layout your page with multiple columns, add animations and other visual effects).
+          JavaScript, and how to use it to add dynamic functionality to web pages (for example, 
+          find your location and plot it on a map, make UI elements appear/disappear when you toggle a button, 
+          save users' data locally on their computers, and much more).
+          Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"> mdnwebdocs</a>
+          
+
+        </p>
 
         </article>
 
@@ -111,14 +117,16 @@
 
     <!-- the <footer> can contain more than an address, but this
     is a useful place to include it. -->
+
+    <hr>
     <footer>
-        <p>Forked from cseanburns/web2023</p>
       <address>
-        <p>555 Main St.<br>
-          Lexington, KY 40506<br>
-          555-123-4567<br>
-          ceo@acme.inc<br>
-          @acmeinc</p>
+        <p><u>Contact:</u><br>
+          555 Main St.<br>
+          Lexington, KY 40509<br>
+          Tel: 000-123-4567<br>
+          e-mail: peace@peaceful.inc<br>
+          No Rights Reserved. Learning @PeacefulDesign</p>
       </address>
 
     </footer>
