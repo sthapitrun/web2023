@@ -20,7 +20,7 @@ header {
     height: 120px;
 }
 
-header img {                     /* descendant combinator selector 1 and selector 2*/
+header img {                     /* descendant combinator selector 1 and selector 2 */
     height: 50%;
 }
 
