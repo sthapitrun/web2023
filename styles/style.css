@@ -1,0 +1,113 @@
+html {
+    font-size: 100%;
+    background-color: #000;
+    color: #fff;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px solid #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    border: solid #fff;
+    font-size: .5rem;
+    text-transform: uppercase;
+    height: 120px;
+}
+
+header img {                     /* descendant combinator selector 1 and selector 2*/
+    height: 50%;
+}
+
+nav ul {                        /*targeting only undistributed list in the page*/
+    list-style-type: none;
+}
+
+nav ul li {                      /*targeting list in the nave section*/
+    background-color: #6ca0dc;
+    color: #000;
+}
+
+nav ul li a {
+    background-color: #6ca0dc;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;          /*remove text decoration such as underline */
+}
+
+nav ul li a:hover {                /* creating a hover styling for links in list */ 
+    background-color: #6ca0dc;
+    color: #673147;
+    font-weight: bold;
+}     
+
+nav ul li:nth-child(2) {
+    background-color: #febaad;
+    color: #000;
+    text-decoration: none;
+}             
+nav ul li:nth-child(2) a {
+    background-color: #febaad;
+    color: #000;
+    text-decoration: none;
+}
+nav ul li:nth-child(2) a:hover {
+    background-color: #febaad;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li:nth-child(4) {
+    background-color: #febaad;
+    color: #000;
+    text-decoration: none;
+}
+nav ul li:nth-child(4) a {
+    background-color: #febaad;
+    color: #000;
+    text-decoration: none;
+}
+nav ul li:nth-child(4) a:hover {
+    background-color: #febaad;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* div class wrapper styling */
+.wrapper {
+    background-color: #979aaa;
+    padding: 10px;
+}
+
+/* focusing on fig caption - figure element */
+figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/*change the link in the figcaption*/
+figcaption a {
+    background-color: #979aaa;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* target the secondary items inside the div wrapper */
+/* because it has a id attribute secondary value is denote by # (pound) sign */
+#secondary {
+    background-color: #000;
+    color: #fff;
+    padding: 2px;
+}
+
+/* changing the footer section */
+footer {
+    background-color: #6ca0dc;
+    color: #000;
+}
