@@ -98,7 +98,7 @@ figcaption {
 /*change the link in the figcaption*/
 figcaption a {
     background-color: #ec9706;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     text-decoration: none;
 }
