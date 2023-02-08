@@ -7,81 +7,86 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    border: 0px solid #fff;
+    border: 0px solid #000;                  /* border, border color, margin, padding used just for practice */
     margin: 0;
     padding: 0;
 }
 
-header {
+header {                                        
     background-color: #000;
-    border: solid #fff;
+    border: none #fff;                         /* border none used for practice to remember, won't show since its none */
     font-size: .5rem;
     text-transform: uppercase;
-    height: 120px;
+    height: 100px;               
 }
 
-header img {                     /* descendant combinator selector 1 and selector 2 */
-    height: 50%;
+header img {                                    /* descendant combinator selector 1 and selector 2 */
+    height: 60%;                              
+    padding: 5px;                               /* testing to add padding so that logo isn't flushed to the corners */
 }
 
-nav ul {                        /*targeting only undistributed list in the page*/
+header h1 {                                     /* header h1 contains motto line below logo */
+    color: #ec9706 ;
+}
+
+nav ul {                                       /* targeting only undistributed list in the page */
     list-style-type: none;
 }
 
-nav ul li {                      /*targeting list in the nave section*/
-    background-color: #6ca0dc;
+nav ul li {                                    /* targeting list in the nave section */
+    background-color: #ec9706;
     color: #000;
+    border: 1px solid #fff;
 }
 
 nav ul li a {
-    background-color: #6ca0dc;
-    color: #fff;
+    background-color: #ec9706c;
+    color: #000;
     text-transform: uppercase;
     font-weight: bold;
-    text-decoration: none;          /*remove text decoration such as underline */
+    text-decoration: none;          /* remove text decoration such as underline */
 }
 
 nav ul li a:hover {                /* creating a hover styling for links in list */ 
-    background-color: #6ca0dc;
-    color: #673147;
+    background-color: #ec9706;
+    color: #fff;
     font-weight: bold;
 }     
 
 nav ul li:nth-child(2) {
-    background-color: #febaad;
-    color: #000;
+    background-color: #000;
+    color: #ec9706;
     text-decoration: none;
 }             
 nav ul li:nth-child(2) a {
-    background-color: #febaad;
-    color: #000;
+    background-color: #000;
+    color: #ec9706;
     text-decoration: none;
 }
 nav ul li:nth-child(2) a:hover {
-    background-color: #febaad;
+    background-color: ##ec9706;
     color: #fff;
     text-decoration: none;
 }
 nav ul li:nth-child(4) {
-    background-color: #febaad;
+    background-color: #000;
     color: #000;
     text-decoration: none;
 }
 nav ul li:nth-child(4) a {
-    background-color: #febaad;
-    color: #000;
+    background-color: #000;
+    color: #ec9706;
     text-decoration: none;
 }
 nav ul li:nth-child(4) a:hover {
-    background-color: #febaad;
+    background-color: #000;
     color: #fff;
     text-decoration: none;
 }
 
 /* div class wrapper styling */
 .wrapper {
-    background-color: #979aaa;
-    padding: 10px;
+    background-color: #222021;
 }
 
 /* focusing on fig caption - figure element */
@@ -92,7 +97,7 @@ figcaption {
 
 /*change the link in the figcaption*/
 figcaption a {
-    background-color: #979aaa;
+    background-color: #ec9706;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -100,14 +105,23 @@ figcaption a {
 
 /* target the secondary items inside the div wrapper */
 /* because it has a id attribute secondary value is denote by # (pound) sign */
+
+#primary h2 {
+    background-color: #ec9706;
+    color: #000;
+}
+
 #secondary {
     background-color: #000;
     color: #fff;
-    padding: 2px;
 }
 
-/* changing the footer section */
-footer {
-    background-color: #6ca0dc;
+#secondary h2 {
+    background-color: #ec9706;
     color: #000;
+}
+
+footer {                                    /* changing the footer section */
+    background-color: #000;
+    color: #fff;
 }
