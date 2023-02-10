@@ -106,10 +106,15 @@ figcaption a {
 /* target the secondary items inside the div wrapper */
 /* because it has a id attribute secondary value is denote by # (pound) sign */
 
-#primary h2 {
-    background-color: #ec9706;
+#primary h2{
+    background-color: #fff;
     color: #000;
 }
+#primary h2:hover {
+    background-color: #ec9706;
+    color: #fff;
+}
+
 
 #secondary {
     background-color: #000;
