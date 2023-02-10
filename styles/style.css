@@ -40,7 +40,7 @@ nav ul li {                                    /* targeting list in the nave sec
 }
 
 nav ul li a {
-    background-color: #ec9706c;
+    background-color: #ec9706;
     color: #000;
     text-transform: uppercase;
     font-weight: bold;
@@ -64,7 +64,7 @@ nav ul li:nth-child(2) a {
     text-decoration: none;
 }
 nav ul li:nth-child(2) a:hover {
-    background-color: ##ec9706;
+    background-color: #ec9706;
     color: #fff;
     text-decoration: none;
 }
