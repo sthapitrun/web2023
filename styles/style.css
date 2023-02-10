@@ -68,9 +68,9 @@ nav ul li:nth-child(2) a:hover {
     color: #fff;
     text-decoration: none;
 }
-nav ul li:nth-child(4) {
+nav ul li:nth-child(4) {                
     background-color: #000;
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 nav ul li:nth-child(4) a {
