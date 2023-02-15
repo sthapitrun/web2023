@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Example</title>
+        <style>
+            html {
+                font-size: 100%;
+            }
+
+            header {
+                border-bottom: 5px solid green;
+                text-align: center;
+            }
+
+            nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; 
+                gap: 1rem;
+            }
+
+            nav ul li {
+                list-style-type: none;
+                background-color: purple;
+                padding: 10px;
+                border: 5px solid orange;
+                color: white;
+                box-shadow: 1px 1px 1px black;
+                
+            }
+           
+
+            article {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                max-width: 1200px;
+                margin 0 auto;
+                gap: 10px; 
+            }
+
+            .card {
+                border: 1px solid grey;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px black;
+                padding: 2rem;               
+            }
+
+            .card:nth-child(odd) {
+                background-color: orange;
+                color: black;
+            }
+            .card:nth-child(even) {
+                background-color: purple;
+                color: white;
+            }
+
+            .card:nth-child(6) {
+                background-image: url(images/test.jpeg);
+                color: black;
+            }
+
+            footer {
+                margin: 1rem auto;
+                border-top: 10px solid green;
+                border-bottom: 10px solid green;
+                text-align: center;
+                background-color: black;
+                color: white;
+                
+        
+            }
+
+        </style>
+    </head>
+    <body>
+        <header><h1>This is a header</h1></header>
+    <nav>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+            <li>Link 5</li>
+            <li>Link 6</li>
+        </ul>
+    </nav>
+   
+    <article>
+        <section class="card">
+        <h2>Link 1</h2>
+        <p>Test Test Test Test Test</p>
+        </section>
+
+        <section class="card">
+            <h2>Link 2</h2>
+            <p>Test Test Test Test Test</p>
+            </section>
+
+        <section class="card">
+             <h2>Link 3</h2>
+             <p>Test Test Test Test Test</p>
+             </section>  
+        
+         <section class="card">
+            <h2>Link 4</h2>
+             <p>Test Test Test Test Test</p>
+                </section>
+    
+            <section class="card">
+                 <h2>Link 5</h2>
+                 <p>Test Test Test Test Test</p>
+                </section>  
+
+                <section class="card">
+                    <h2>Link 6</h2>
+                    <p>Test Test Test Test Test</p>
+                    </section>  
+    
+            
+    </article>
+   
+    <footer><h2>This is just a footer</h2></footer>
+    </body>
+
+    <section 
+</html>
