@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+         <!-- Browser's viewport is the area of the window in which web content can be seen. A typical mobile optimized site contains so -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Example</title>
+
+<!-- Not recommended to add style sheet within the html as it is less efficient. AVOID-->
+        <style>
+            html {
+                font-size:  100%;
+            }
+            header {
+                border-bottom: 5px solid red;
+            }
+
+            p {
+                border: 1px solid black;
+                font-size: 2rem;
+                width: 8rem;
+                height: 8rem;
+                padding: 10rem;
+            }
+            p:nth-child(odd) {
+                background-color: black;
+                color: white;
+            }
+            p:nth-child(even) {
+                background-color: red;
+                color: white;
+            }
+
+            section { 
+                /* flex by default turns everything into rows */
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap; /* wraps the elements of page and makes ir responsive */
+
+            }
+
+            footer {
+                border-top: 5px solid red;
+            }
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <header><h1>Example header</h1></header>
+
+<!-- A document mustn't have more than one <main> element that doesn't have the hidden attribute specified. -->
+        <section class="main">
+            <p>Box 1</p>
+            <p>Box 2</p>
+            <p>Box 3</p>
+            <p>Box 4</p>
+            <p>Box 5</p>
+            <p>Box 6</p>
+
+        </section>
+        <footer><h2>This is a footer</h2></footer>
+    </body>
+</html>
