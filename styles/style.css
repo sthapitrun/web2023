@@ -2,45 +2,53 @@ html {
     font-size: 100%;
     background-color: #000;
     color: #fff;
-    
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    border: 0px solid #000;                  /* border, border color, margin, padding used just for practice */
     margin: 0;
     padding: 0;
+    
 }
 
 header {                                        
     background-color: #000;
-    border: none #fff;                         /* border none used for practice to remember, won't show since its none */
     font-size: .5rem;
     text-transform: uppercase;
-    height: 100px;               
+    height: 100px;   
+    padding: .5rem;
+    border-bottom: 1px solid #fff;
 }
 
 header img {                                    /* descendant combinator selector 1 and selector 2 */
-    height: 60%;                              
-    padding: 5px;                               /* testing to add padding so that logo isn't flushed to the corners */
+    height: 55%;
 }
-
 header h1 {                                     /* header h1 contains motto line below logo */
-    color: #ec9706 ;
+    color: #ec9706;
+    justify-items: right;                        /* by default item is aligned left */
+    margin-left: 10px;
 }
 
-nav ul {                                       /* targeting only undistributed list in the page */
+nav {
+    padding: 1rem 0 1rem 0;
+}
+
+nav ul {                        /* targeting only undistributed list in the page */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
     list-style-type: none;
 }
 
-nav ul li {                                    /* targeting list in the nave section */
+nav ul li {                                 /* targeting list in the nave section */
     background-color: #ec9706;
     color: #000;
     border: 1px solid #fff;
+    padding: .5rem 3rem .5rem 3rem;
+    
 }
 
 nav ul li a {
-    background-color: #ec9706;
     color: #000;
     text-transform: uppercase;
     font-weight: bold;
@@ -48,41 +56,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {                /* creating a hover styling for links in list */ 
-    background-color: #ec9706;
     color: #fff;
     font-weight: bold;
 }     
 
-nav ul li:nth-child(2) {
+nav ul li:nth-child(even) {
     background-color: #000;
     color: #ec9706;
     text-decoration: none;
 }             
-nav ul li:nth-child(2) a {
+nav ul li:nth-child(even) a {
     background-color: #000;
     color: #ec9706;
     text-decoration: none;
 }
-nav ul li:nth-child(2) a:hover {
-    background-color: #ec9706;
-    color: #fff;
-    text-decoration: none;
-}
-nav ul li:nth-child(4) {                
+nav ul li:nth-child(even) a:hover {
     background-color: #000;
     color: #fff;
     text-decoration: none;
 }
-nav ul li:nth-child(4) a {
-    background-color: #000;
-    color: #ec9706;
-    text-decoration: none;
-}
-nav ul li:nth-child(4) a:hover {
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-}
+
 
 /* div class wrapper styling */
 .wrapper {
