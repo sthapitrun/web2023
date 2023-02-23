@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML5 Grid Example</title>
+        <style>
+            html {
+                font-size: 100%;
+            }
+
+            header {
+                border-bottom: 2px solid green;
+                text-align: center;
+            }
+
+            nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; 
+                gap: 2rem;
+            }
+
+            nav ul li {
+                list-style-type: none;
+                background-color: #ec9706;
+                padding: 10px;
+                border: 2px solid #fff;
+                color: #000;
+                box-shadow: 2px 2px 2px black;
+                text-transform: uppercase;
+                font-weight: bold;
+                
+            }
+           
+
+            article {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                max-width: 1200px;
+                margin 0 auto;
+                gap: 10px; 
+            }
+
+            .card {
+                border: 1px solid grey;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px black;
+                padding: 2rem;               
+            }
+
+            .card:nth-child(odd) {
+                background-color: orange;
+                color: black;
+            }
+            .card:nth-child(even) {
+                background-color: purple;
+                color: white;
+            }
+
+            .card:nth-child(6) {
+                background-image: url(images/test.jpeg);
+                color: black;
+            }
+
+            footer {
+                margin: 1rem auto;
+                border-top: 2px solid green;
+                border-bottom: 2px solid green;
+                text-align: center;
+                background-color: black;
+                color: white;
+                
+        
+            }
+
+        </style>
+    </head>
+    <body>
+        <header><h1>Getting Started with the Web</h1>
+        </header>
+
+    <nav>
+        <ul>
+            <li>HTML</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Web Forms</li>
+            <li>Accessibility</li>
+        </ul>
+    </nav>
+   
+    <article>
+      
+        <section class="card">
+            <h2>HTML</h2>
+            <p>HTML: HyperText Markup Language
+                HTML (HyperText Markup Language) is the most basic building block of the Web. 
+                It defines the meaning and structure of web content. 
+                Other technologies besides HTML are generally used to describe a web page's appearance/presentation 
+                (CSS) or functionality/behavior (JavaScript)</p>
+            </section>
+
+     <section class="card">
+            <h2>HTML5</h2>
+            <p>The term HTML5 is essentially a buzzword that refers to a set of 
+                modern web technologies. This includes the HTML Living Standard, along with JavaScript 
+                APIs to enhance storage, multimedia, and hardware access.</p>
+     </section>
+
+        <section class="card">
+             <h2>CSS</h2>
+             <p>Cascading Style Sheets — or CSS — is the first technology you should start learning after HTML. 
+                While HTML is used to define the structure and semantics of your content, CSS is used to style it and lay it out. 
+                For example, you can use CSS to alter the font, color, size, 
+                and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+             </section>  
+        
+         <section class="card">
+            <h2>JavaScript</h2>
+             <p>JavaScript is a programming language that allows you to implement complex functionalities on web pages.
+                 Every time a web page does more than just sit there and display static information for you to 
+                 look at—displaying timely content updates, interactive maps, animated 2D/3D graphics, 
+                scrolling video jukeboxes, or more—you can bet that JavaScript is probably involved.</p>
+                </section>
+    
+            <section class="card">
+                 <h2>Web Forms</h2>
+                 <p>Web forms are a very powerful tool for interacting with users — most commonly they are used 
+                    for collecting data from users, or allowing them to control a user interface. 
+                    However, for historical and technical reasons, it's not always obvious how to use them to their full potential. 
+                    In the articles listed below, we'll cover all the essential aspects of Web forms including marking up their HTML structure, 
+                    styling form controls, validating form data, and submitting data to the server.</p>
+                </section>  
+
+                <section class="card">
+                    <h2>Accessibility</h2>
+                    <p>Sites should be accessible to keyboard, mouse, and touch screen users, and any other way users access the web, 
+                        including screen readers and voice assistants like Alexa and Google Home.
+                        Applications should be understandable and usable by people regardless of auditory, visual,
+                        physical, or cognitive abilities.
+                        Sites should also not cause harm: web features like motion can cause migraines or epileptic seizure</p>
+                    </section>  
+    
+            
+    </article>
+   
+    <footer><h2>This is just a footer</h2></footer>
+    </body>
+
+    <section 
+</html>

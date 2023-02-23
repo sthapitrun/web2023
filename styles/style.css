@@ -13,7 +13,7 @@ body {
 header {                                        
     background-color: #000;
     color: #ec9706;
-    font-size: .5rem;
+    font-size: .4rem;
     height: 100px;                             /* total height of the header */
     border-bottom: 2px solid #ec9706;          /* practicing border */
     display: grid;
@@ -24,7 +24,7 @@ header h1 {
     height: 100%;
     text-align: right;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 70px;
 }
 
 header a {                      /* header a contains logo image with index.html link - aligned left */
@@ -33,7 +33,7 @@ header a {                      /* header a contains logo image with index.html 
 }
 
 header img{
-    height: 50%;            /* resizes the image - logo to 50% of original size */
+    height: 30%;            /* resizes the image - logo to 30% of original size */
     margin-top: 10px;
 }
 
@@ -43,7 +43,7 @@ nav {
 
 nav ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
     justify-items: center;
     list-style-type: none;
 }
@@ -53,6 +53,7 @@ nav ul li {
     background-color: #ec9706;
     border: 2px solid #000;
     color: #fff;
+    text-align: center;
 }
 
 nav ul li a {
