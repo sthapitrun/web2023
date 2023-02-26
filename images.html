@@ -2,19 +2,229 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="describing"
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML5 and Images</title>
     
         <style>
         .image-style {
             border: 10px solid red;
-            box-shadow: 20px 20px;
+            box-shadow: 20px 10px;
+            transform: rotateX(180deg);
+            /* transform: rotateY(150deg); */
+            /* transform: rotateZ(90deg); */
         }
 
+        html {
+        text-align: center;         /*aligns all text in the page to center */
+        font-size: 100%;
+        background-color: #fff;
+        color: #000;
+        /* background-image: url(images/littlelion.png);
+        background-repeat: no-repeat; */
+        }
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            height: 70px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        header h1 {
+            margin: auto;
+            /* text-transform: uppercase; */
+        }
+
+        section p {
+            /* text-transform: capitalize;  */
+            width: auto;
+            border-top: 1px solid #000;
+            /* border-bottom: 1px solid #000; */
+            padding: 1rem 1rem 1rem 1rem;           /*top left bottom right */
+        }
+        
+      /* we have created a section class background to test placing background image in that section */
+    .background{
+      background-image: url(images/littlelion.png);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      }
+        
         </style>
 
     </head>
+
+    <body>
+        <header> <h1>Learning to modify images in HTML5</h1>
+        </header>
+        <article>
+
+        <section>
+        <h2>The Concept of Responsive Iamges</h2>
+        <p>The concept of responsive images — images that work well on devices 
+            with widely differing screen sizes, resolutions, and other such features — 
+            and look at what tools HTML provides to help implement them. 
+            This helps to improve performance across different devices. 
+            Responsive images are just one part of responsive design, 
+            a future CSS topic for you to learn.</p>
+        <img src="images/waterfront.png"
+        alt="A picture of Big Four Bridge from WaterFront Park, Louisville "
+        title="Big Four Bridge - Waterfront Park">
+        </section>
+
+        <section>
+        <h2>Changing the width and height</h2>
+
+        <p>We can use the <code>height</code> and <code>width</code>
+        attributes to resize an image. However, it's better to change
+        the height and width in a photo editor, like Photoshop or Gimp, instead.
+        This is because despite the change here, the original file may be large,
+        and it's better to avoid transmitting large files over the internet when possible.
+        We don't always know what kind of internet connection people may have.
+        Keep files as small as possible.</p>
+
+        <p>Changing the height to 100:</p>
+
+        <img src="images/waterfront.png"
+        alt="A picture of Big Four Bridge from WaterFront Park, Louisville "
+        title="Big Four Bridge - Waterfront Park"
+        height="100">
+
+        <p>Changing the height to 200:</p>
+
+        <img src="images/waterfront.png"
+        alt="A picture of Big Four Bridge from WaterFront Park, Louisville "
+        title="Big Four Bridge - Waterfront Park"
+        height="200">
+    
+        <p>Changing the width to 400:</p>
+
+        <img src="images/waterfront.png"
+        alt="A picture of Big Four Bridge from WaterFront Park, Louisville "
+        title="Big Four Bridge - Waterfront Park"
+        width="400"> 
+    
+        <p>Changing the widht to 800:</p>
+
+        <img src="images/waterfront.png"
+        alt="A picture of Big Four Bridge from WaterFront Park, Louisville "
+        title="Big Four Bridge - Waterfront Park"
+        width="800">
+    </section>
+
+    <section>
+        <h2>Responsive design with images</h2>
+        <p>we can use the
+            <code>srcset</code> and
+            <code>sizes</code> HTML attributes
+            to list optional size images to display
+            depending on screen size.
+            This allows the browser to
+            load different size images depending
+            on the size of the screen.
+            This has other bandwidth implications.
+            Some people may be on mobile devices,
+            and therefore may have
+            slower internet connections.
+            Using a smaller image file will cause the
+            smaller image to load first,
+            and therefore, faster on such devices.
+            The <code>src</code> attribute is used
+            here as a fallback device,
+            in case <code>srcset</code>
+            does not work.</p>
+
+    <img srcset="images/lion-200w.png 200w,
+            images/lion-500w.png 500w"
+            sizes="(max-width: 500px) 200px, 500px"  
+            src="images/lion-500w.png"
+            alt="A picture of lion"> 
+            <!-- If the max width display is 499 then display 500px image if not display the 200px image --> 
+
+    </section>
+
+    <section>
+        <h2>External Images</h2>
+        <p>We use the <code>figure</code> and <code>figcaption</code> when we want to
+            isolate an image as important. We might use these HTML
+            elements in certain kinds of documents, like news articles or scholarly papers.</p>
+
+        <figure>
+                <img src="https://seeklogo.com/images/L/lion-leao-logo-47267D166B-seeklogo.com.png"
+          
+                alt="Lion logo Png Vector"
+          
+                title="Lion Logo">
+          
+              <figcaption>
+                Source: Designed/uploaded by emirandaj, SeekLogo.com
+              </figcaption>
+              </figure>
+</section>
+
+<section>
+    <h2>Images with Styling</h2>
+    <p>Adding a <code>class</code> attribute to the image. Specify this
+        particular image in the HTML and add some styling to it, like a red border and a shadow:<br>
+    Below is an example of the image rotated 180 degrees using <code>.image-style</code></p>
+
+        <img class="image-style"
+        srcset="images/lion-200w.Png 200w, images/lion-500w.png 500w"
+        sizes="(max-width: 499px) 200px, 500px"
+        alt="A picture of a Lion"
+        src="images/lion-500w.png">
+
+</section>
+
+
+<section class="background">
+    <h2>Background Images</h2>
+  
+    <p>Background images can be applied over the background of a
+    particular part of a page, like this <code>section</code> here, or to the entire page using the
+    <code>body</code> elcodeent.</p>
+
+        
+  <p>The code for something like that would look like the code below.
+    Using <code>url</code> and not <code>src</code> to set the file location.
+    The <code>url</code> here is called a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions">
+    <bold>CSS reference function</bold></a>, unlike <code>src</code>, which is a HTML attribute.
+    We only use <code>src</code> for <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">
+    specific HTML elements</a> like the <code>img, audio, video</code> elements.</p>
+  
+    <p>In the example below,
+    we can place the <code>image file</code> littllion.png wherever we desire,
+    but we can do more, including repeating an image or placing it in different locations.
+    See: <a href="https://www.w3schools.com/css/css3_backgrounds.asp">CSS3 Background Image</a>.<br>
+    An example to style image background for a particular section.</p>
+  
+<pre>
+
+    <code>
+      section 
+      {
+      background-image: url(images/littlelion.png);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      }
+    </code>
+    </pre>
+</section>
+
+    </article>
+    </body>
+
+
+
+    
+    
 
 </html>
