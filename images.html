@@ -57,14 +57,23 @@
       background-repeat: no-repeat;
       background-position: bottom right;
       }
-        
+      
+      a {
+        color: #ec9706;
+        text-decoration: none;
+      }
+
         </style>
 
     </head>
 
     <body>
         <header> <h1>Learning to modify images in HTML5</h1>
+   
         </header>
+
+        <a href=index.html>Go Back</a>
+
         <article>
 
         <section>
@@ -144,10 +153,10 @@
 
     <img srcset="images/lion-200w.png 200w,
             images/lion-500w.png 500w"
-            sizes="(max-width: 500px) 200px, 500px"  
+            sizes="(max-width: 640px) 200px, 500px"  
             src="images/lion-500w.png"
             alt="A picture of lion"> 
-            <!-- If the max width display is 499 then display 500px image if not display the 200px image --> 
+            <!-- If the max width display is 640 then display 500px image if not display the 200px image --> 
 
     </section>
 
@@ -178,7 +187,7 @@
 
         <img class="image-style"
         srcset="images/lion-200w.Png 200w, images/lion-500w.png 500w"
-        sizes="(max-width: 499px) 200px, 500px"
+        sizes="(max-width: 400px) 200px, 500px"
         alt="A picture of a Lion"
         src="images/lion-500w.png">
 
