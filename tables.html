@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World's Richest Person List</title>
+        
+        <style>
+
+            html {
+                align-content: center;
+                /* padding-left: 100px;
+                padding-right: 100px; */
+            }
+             body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #222021;
+                color: white;
+             }
+
+             body h1 {
+                background-color: #000;
+                text-align: center;
+             }
+
+             /* table {                                 
+                margin-right: auto;
+                margin-left: auto;
+             } */
+
+            caption {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                text-shadow: 2px 2px 4px #000;
+                padding: 5px;
+                border-radius: 15px;
+                background-color: #ec9706;
+                color: #fff;
+                border: 2px solid #fff;
+            }
+
+             thead {   
+                background-color: #357EC7;
+                font-weight: bold;
+             } 
+
+             /* .test {
+                background-color: red;
+                font-size: 1rem;
+             } */
+
+             tfoot {
+                background-color: #357EC7;
+                font-weight: bold;
+             }
+
+             tfoot td {
+                color: #fff;
+                font-size: .8rem;
+                text-align: right;
+                
+             }
+
+             tfoot td a {
+                text-decoration: none;
+                color: #fff;
+             }
+
+             tfoot td a:hover {
+                color: #ec9706;
+             }
+
+             th, td {                            /*use comma to style more than 1 element at a time */
+                padding: 5px 10px;
+             }
+
+            .center {                           /* table tbody class=center, instead of all td */
+                text-align: center;
+            }
+
+          .rowhover:hover {
+            background-color: #ec9706;
+            color: #000;
+          }  
+
+          .net:hover {
+            color: red;
+          }
+
+
+        </style>
+    </head>
+
+    <body>
+        <section id="primary">
+        <h1>Tables: HTML & CSS</h1>
+        <p>A table is a structured set of data made up of rows and columns (tabular data). 
+            A table allows you to quickly and easily look up values that indicate some 
+            kind of connection between different types of data, for example a person and their age, 
+            or a day of the week, or the timetable for a local swimming pool.
+        <br>
+
+        For the purpose of creating a demo table, we will use the following elements to construct
+            a table:
+        </p>
+        <ul>
+            <li><code>table</code>: the main table element</li>
+            <li><code>caption</code>: adding caption to the tables</li>
+            <li><code>thead</code>: semantic element that defines table header</li>
+            <li><code>tbody</code>: semantic element that defines table body</li>
+            <li><code>tfoot</code>: semantic element that defines table footer</li>
+            <li><code>tr</code>: defines table row</li>
+            <li><code>th</code>: defines table header cell</li>
+            <li><code>td</code>: defines data cell</li>
+        </ul>
+    </section>
+
+        <table>
+            <caption>World's billionaires List</caption> <!--the caption is meant to contain a description of the table contents-->
+            <thead>     <!--header section on the table-->
+                <tr class="test">
+                    <th colspan="6">Top 10 Richest Person in the World</th> <!--colspan attribute-->
+                </tr>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Net Worth(in billions of $)</th>
+                    <th>Age</th>
+                    <th>Source</th>
+                    <th>Country/Territory</th>
+                </tr>
+            </thead>
+            <tbody class="center"> <!--Creating a class center for tbody instead of td-->
+                <tr class="rowhover">
+                    <td>1</td>
+                    <td>Bernard Arnault</td>
+                    <td class="net">$206.0 B</td>
+                    <td>73</td>
+                    <td>LVMH</td>
+                    <td>France</td>
+                </tr>
+                <tr class="rowhover">
+                    <td>2</td>
+                    <td>Elon Musk</td>
+                    <td class="net">$196.5 B</td>
+                    <td>51</td>
+                    <td>Tesla, SpaceX</td>
+                    <td>United States</td>
+                </tr>
+                <tr class="rowhover">
+                    <td>3</td>
+                    <td>Jeff Bezos</td>
+                    <td class="net">$117.4 B</td>
+                    <td>59</td>
+                    <td>Amazon</td>
+                    <td>United States</td>
+                </tr>
+                <tr class="rowhover">
+                    <td>4</td>
+                    <td>Larry Ellison</td>
+                    <td class="net">$112.3 B</td>
+                    <td>78</td>
+                    <td>Oracle</td>
+                    <td>United States</td>
+                </tr>
+                <tr class="rowhover">
+                    <td>5</td>
+                    <td>Warren Buffet</td>
+                    <td class="net">$106.4 B</td>
+                    <td>92</td>
+                    <td>Berkshire Hathaway</td>
+                    <td>United States</td>
+                </tr>
+                <tr class="rowhover">
+                    <td>6</td>
+                    <td>Bill Gates</td>
+                    <td class="net">$104.9 B</td>
+                    <td>67</td>
+                    <td>Microsoft</td>
+                    <td>United States</td>
+                </tr>
+                <tr class="rowhover">
+                    <td>7</td>
+                    <td>Carlos Slim Helu</td>
+                    <td class="net">$89.9 B</td>
+                    <td>83</td>
+                    <td>Telecom</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr class="rowhover">
+                    <td>8</td>
+                    <td>Mukesh Ambani</td>
+                    <td class="net">$82.6 B</td>
+                    <td>65</td>
+                    <td>Diversified</td>
+                    <td>India</td>
+                </tr>
+                <tr class="rowhover">
+                    <td>9</td>
+                    <td>Steve Ballmer</td>
+                    <td class="net">$80.9 B</td>
+                    <td>66</td>
+                    <td>Microsoft</td>
+                    <td>United States</td>
+                </tr>
+                <tr class="rowhover">
+                    <td>10</td>
+                    <td>Francoise Bettencourt Meyers</td>
+                    <td class="net">$79.5 B</td>
+                    <td>69</td>
+                    <td>L'Oreal</td>
+                    <td>France</td>
+                </tr>
+            </tbody>
+
+
+
+            <tfoot>
+                <tr>
+                    <td colspan="6">Source: <a href=https://www.forbes.com/real-time-billionaires/#b7be6273d788 target=”_blank”>Forbes 2023</a></td>
+                </tr>
+            </tfoot>
+
+
+        </table>
+
+
+
+    </body>
+</html>
