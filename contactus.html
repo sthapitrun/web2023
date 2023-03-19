@@ -5,42 +5,14 @@
         <meta name="description" content="learn html css ICT 420 class">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Get In Touch</title>
-        <style>
-
-            #primary h1 {
-            background-color: #000;
-            text-align: center;
-            color: #ec9706;
-            font-weight: bold;
-            text-transform: uppercase;
-            }
-
-            #primary p {
-            text-align: center;
-
-            }
-            
-            #primary form.contact {
-                /* display: flex;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: bold;
-                width: 50px; */
-
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 0fr));
-                max-width: auto;
-                gap: 5px; 
-            }
-
-
-        </style>
+      
     </head>
 <body>
-    <section id="primary">
         
     <h1>Contact Us:</h1>
     <p>Please fill in your information below to learn more about HTML, CSS and Semantic Web Development.<br>
     A member of our team will contact you with more details within 24-72 hours. Thank you!</p>
+    <!-- Using post method for the form -->
     <form action="#" method="post" class="contact">
         <label for="fname">First name: </label>
         <input type="text" name="userinfo" id="fname" required>
@@ -51,12 +23,55 @@
         <label for="email">Email: </label>
         <input type="email" name="userinfo" id="email" required>
         <br>
-        <input type="submit" value="Confirm" >
+        <!-- Creating a datalist -->
+        <label for="interest">Please input your area of interest:</label>
+        <input list="topic" id="interest" name="interest">
+        <datalist id="topic">
+            <option value="HTML5"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+            <option value="PHP"></option>
+            <option value="Full Stack"></option>
 
+        </datalist>
+        <br>
+        <!-- Predefined list of options -->
+        <label for="year">Please indicate your current student year </label>
+        <select id="year" name="year">
+            <option value=""> - Please select one - </option> 
+            <option value="freshman">Freshman</option> 
+            <option value="sophomore">Sophomore</option> 
+            <option value="junior">Junior</option> 
+            <option value="senior">Senior</option> 
+        </select>
+
+        <!--Legend and Fieldset with radio button-->
+        <fieldset>
+            <legend>What is your major?</legend>
+
+            <input type="radio" id="ict" name="major" value="ICT">
+            <label for="ict">ICT</label><br>
+
+            <input type="radio" id="cs" name="major" value="CS">
+            <label for="cs">Computer Science</label><br>
+
+            <input type="radio" id="comm" name="major" value="Communications">
+            <label for="comm">Communications</label><br>
+        </fieldset>
+
+       
+
+        <h3>Comments and Feedback:</h3>
+        <label for="feedback">Please leave us any additional comments and feedback that you may have.</label>
+        <textarea name="comments" id="feedback" rows="5" cols="80"></textarea>
+
+        <br>
+        <input type="submit" value="Submit" >
     </form>
 
+
     <hr>
-</section>
+
     
 </body>
 
