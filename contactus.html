@@ -5,13 +5,86 @@
         <meta name="description" content="learn html css ICT 420 class">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Get In Touch</title>
-      
+      <style>
+        .bold {
+            font-weight: bold;          /* .bold from span */
+        }
+        h1 {
+            text-align: center;
+            background-color: #000;
+            color: #ec9706;
+        }
+        p {
+            text-align: center;
+        }
+
+        a {
+            color: #ec9706;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase; 
+            text-align: left;
+        }
+
+        a:hover {
+            color: red;
+            background-color: #000;
+        }
+
+        a:visited {
+            color: #ec9706;
+        }
+
+        .contact label {
+            color: #000;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+        }
+
+        .contact input {
+            display: flex;
+            font-size: 100%;
+            width: auto;
+            border: 1px solid #ec9706;
+            background-color: #fff;
+            color: blue;
+        }
+        .contact fieldset {
+            width: auto;
+        }
+        .contact legend {               /*targeting legend of form */
+            color: #ec9706;
+            font-weight: bold;
+
+        }
+
+        hr {
+            margin: 10px 0 10px 0;
+        }
+
+        textarea {
+        background-color: #fff;
+        color: black;
+        font-weight: bold;
+      }
+
+      </style>
     </head>
 <body>
         
-    <h1>Contact Us:</h1>
-    <p>Please fill in your information below to learn more about HTML, CSS and Semantic Web Development.<br>
-    A member of our team will contact you with more details within 24-72 hours. Thank you!</p>
+    <h1>Contact Us</h1>
+    <p>Please fill in your information below to learn more about 
+    <span class="bold">HTML, CSS and Semantic Web Development.</span>
+    <br>
+    A member of our team will contact you within 24-72 hours via email or phone. <span class="bold">Thank you!</span>
+    <br>
+    <a href="index.html">Home</a>(Back to HomePage)
+        
+    </p>
+
+    <hr>
+    
     <!-- Using post method for the form -->
     <form action="#" method="post" class="contact">
         <label for="fname">First name: </label>
@@ -23,21 +96,26 @@
         <label for="email">Email: </label>
         <input type="email" name="userinfo" id="email" required>
         <br>
+
+        <hr>
+
         <!-- Creating a datalist -->
-        <label for="interest">Please input your area of interest:</label>
-        <input list="topic" id="interest" name="interest">
+        <label for="interest">Please select your area of interest:</label>
+        <input list="topic" id="interest" name="interest" required>
         <datalist id="topic">
             <option value="HTML5"></option>
             <option value="CSS"></option>
             <option value="JavaScript"></option>
             <option value="PHP"></option>
-            <option value="Full Stack"></option>
+            <option value="Full Stack Development"></option>
 
         </datalist>
         <br>
+        <hr>
         <!-- Predefined list of options -->
-        <label for="year">Please indicate your current student year </label>
-        <select id="year" name="year">
+        <label for="year">Please indicate your current student year:</label><br>
+
+        <select id="year" name="year" required>
             <option value=""> - Please select one - </option> 
             <option value="freshman">Freshman</option> 
             <option value="sophomore">Sophomore</option> 
@@ -45,28 +123,32 @@
             <option value="senior">Senior</option> 
         </select>
 
+        <hr>
+
         <!--Legend and Fieldset with radio button-->
         <fieldset>
             <legend>What is your major?</legend>
 
             <input type="radio" id="ict" name="major" value="ICT">
-            <label for="ict">ICT</label><br>
+            <label for="ict">ICT</label>
 
             <input type="radio" id="cs" name="major" value="CS">
-            <label for="cs">Computer Science</label><br>
+            <label for="cs">Computer Science</label>
 
             <input type="radio" id="comm" name="major" value="Communications">
-            <label for="comm">Communications</label><br>
+            <label for="comm">Communications</label>
+            
         </fieldset>
 
-       
+        <hr>
 
-        <h3>Comments and Feedback:</h3>
+       <!--Text Area-->
+        <h2>Comments and Feedback:</h2>
         <label for="feedback">Please leave us any additional comments and feedback that you may have.</label>
         <textarea name="comments" id="feedback" rows="5" cols="80"></textarea>
 
         <br>
-        <input type="submit" value="Submit" >
+        <input type="submit" value="Submit">
     </form>
 
 
