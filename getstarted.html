@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML5 Grid Example</title>
         <style>
-            hhtml {
+            html {
         font-size: 100%;
-        background-color: #000;
-        color: #fff;
+        background-color: #fff;
+        color: #000;
         }
 
         body {
@@ -85,17 +85,21 @@
         color: #ec9706;
     }
 
-          
-           
-
-            article {
+    article {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 max-width: 1200px;
-                margin 0 auto;
+                margin: auto;
+                justify-content: center;
+                text-align: center;
                 gap: 10px; 
             }
-
+        .getstarted {
+            text-transform: uppercase;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+        }
             .card {
                 border: 1px solid grey;
                 border-radius: 10px;
@@ -108,7 +112,7 @@
                 color: black;
             }
             .card:nth-child(even) {
-                background-color: purple;
+                background-color: #000;
                 color: white;
             }
 
@@ -125,7 +129,7 @@
                 background-color: black;
                 color: white;
                 
-        
+            
             }
 
         </style>
@@ -149,7 +153,7 @@
             <li><a href="contactus.html">Contact Us</a></li>
           </ul>
         </nav>
-        <h2>Getting Started with the Web</h2>
+        <h2 class="getstarted">Getting Started with the Web</h2>
         
 
     
