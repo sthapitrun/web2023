@@ -152,12 +152,14 @@ figcaption a:hover{
     
    
 } */
-
-
+  
 footer {
     display: flex;
     background-color: #000;
     color: #fff;
-    padding: 1rem 5rem 1rem 2rem;
+    padding: .2rem 1rem .2rem 1rem;
     border-top: 2px solid #ec9706;
+    justify-content: center;
+    text-align: center;
+    font-size: .9rem;
 }

@@ -4,107 +4,217 @@
         <meta charset="utf-8">
         <meta name="description" content="learn html css ICT 420 class">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="styles/style.css">      -->
+        <!-- enables internal sytling with CSS -->
         <title>Get In Touch</title>
       <style>
-        .bold {
-            font-weight: bold;          /* .bold from span */
-        }
-        h1 {
-            text-align: center;
-            background-color: #000;
-            color: #ec9706;
-        }
-        p {
-            text-align: center;
+        html {
+        font-size: 100%;
+        background-color: #000;
+        color: #fff;
         }
 
-        a {
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase; 
-            text-align: left;
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
         }
 
-        a:hover {
-            color: red;
-            background-color: #ec9706;
-        }
-
-        a:visited {
-            color: blue;
-        }
-
-        .contact label {
-            color: #000;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            align-items: center;
-        }
-
-        .contact input {
-            display: flex;
-            font-size: 100%;
-            width: auto;
-            border: 1px solid #ec9706;
-            background-color: #fff;
-            color: blue;
-        }
-        .contact fieldset {
-            width: auto;
-        }
-        .contact legend {               /*targeting legend of form */
-            color: blue;
-            font-weight: bold;
-        }
-
-        hr {
-            margin: 10px 0 10px 0;
-        }
-
-        textarea {
-        background-color: #fff;
-        color: black;
-        font-weight: bold;
-      }
-
-      .contact input[type=submit] {
+    header {                                        
         background-color: #000;
         color: #ec9706;
-      }
+        font-size: .4rem;
+        height: 100px;                             /* total height of the header */
+        border-bottom: 2px solid #ec9706;          /* practicing border */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    header h1 {
+        height: 100%;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 70px;
+    }
+
+    header a {                      /* header a contains logo image with index.html link - aligned left */
+        height: 100%;
+        margin-left: 10px;
+    }
+
+    header img{
+        height: 30%;            /* resizes the image - logo to 30% of original size */
+        margin-top: 10px;
+    }
+
+    nav {
+        padding: .5rem 0 .5rem 0;
+        background-color: #fff;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+        justify-items: center;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        padding: .5rem 3rem .5rem 3rem;
+        background-color: #ec9706;
+        border: 2px solid #000;
+        color: #fff;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover{
+        color: #fff;
+        font-weight: bold;
+    }
+    nav ul li:nth-child(even) {
+        background-color: #000;
+    }
+    nav ul li:nth-child(even) a {
+        color: #fff;
+    }
+    nav ul li:nth-child(even) a:hover {
+        color: #ec9706;
+    }
+    .bold {                 /* targeting span for bold font */
+        font-weight: bolder;
+    }
+    h2 {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+    }
+    h2:hover{
+        color: #ec9706;
+    }
+    .grid-container {
+        background-color: #222021;  
+        display: grid;
+        /* padding: 0 1rem 0 1rem; */
+        justify-content: center;
+          
+}
+
+    .grid-container>div{
+        background-color: #ec9706;
+        color: #000;
+        padding: 0 10px 0px 10px;
+        text-align: center;
+    }
+    .contact li {
+        list-style-type: none;
+        margin: 5px;
+    }
+
+    input, label {
+        margin: 5px;
+        width: 250px;
+    }
+   legend {
+    /* text-align: center; */
+    background-color: #000;
+    color: #ec9706;
+    padding: 10px 10px;
+    font-weight: bolder;
+   }
+   fieldset {
+    width: 250px;
+    height: auto;
+  /* white-space: nowrap;  */
+  
+  margin: auto;
+  justify-content: center;
+
+   }
+   
+  .cnf{
+    padding: 10px;
+    font-weight: bolder;
+    color: #fff;
+    text-shadow: 2px 3px 2px #000;
+  }
+
+    footer {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    padding: .2rem 1rem .2rem 1rem;
+    border-top: 2px solid #ec9706;
+    justify-content: center;
+    text-align: center;
+    font-size: .9rem;
+}
+   
 
       </style>
     </head>
 <body>
-        
-    <h1>Contact Us</h1>
-    <p>Please fill in your information below to learn more about 
-    <span class="bold">HTML, CSS and Semantic Web Development.</span>
-    <br>
-    A member of our team will contact you within 24-72 hours via email or phone. <span class="bold">Thank you!</span>
-    <br>
-    <a href="index.html">Home</a>(Back to HomePage)
-        
-    </p>
 
-    <hr>
+    <header>
+        <a href="index.html">
+          <img src="images/semanticlogo.png" alt="Semantic Web Development Logo">
+        </a>
+        <h1 id="title">Learning to build</h1>
+      </header>
+
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="getstarted.html">Get Started</a></li>
+          <li><a href="flex.html">Flex Test</a></li>
+          <li><a href="images.html">Images Example</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      
+      <div class="grid-container">    <!--Using only one column for simplicity in grid layout-->   
+        <div>
+    <h2>Contact Form</h2>
+    <p>Please fill in your information below to learn more about 
+    <span class="bold">HTML, CSS and Semantic Web Development.</span><br>
+    A member of our team will contact you within 24-72 hours via email or phone. 
+    <span class="bold">Thank you!</span></p>
+   
+   
     
     <!-- Using post method for the form -->
+ 
     <form action="#" method="post" class="contact">
-        <label for="fname">First name: </label>
-        <input type="text" name="userinfo" id="fname" required>
-        <label for="lname">Last name: </label>
-        <input type="text" name="userinfo" id="lname" required>
-        <label for="phone">Phone No.: </label>
-        <input type="tel" name="userinfo" id="phone" maxlength="10" placeholder="8590000000">
-        <label for="email">Email: </label>
-        <input type="email" name="userinfo" id="email" required>
-        <br>
+       
+            <ul>
 
-        <hr>
+        <li><label for="fname">First name: </label>                </li>
+        
+        <li><input type="text" name="userinfo" id="fname" required></li>
+        
+        <li><label for="lname">Last name: </label>    </li>
+
+        <li><input type="text" name="userinfo" id="lname" required>           </li>
+        
+        <li><label for="phone">Phone No.: </label> </li>
+        
+        <li><input type="tel" name="userinfo" id="phone" maxlength="10" placeholder="8590000000"> </li>
+
+        <li><label for="email">Email: </label> </li>
+    
+        <li><input type="email" name="userinfo" id="email" required> </li>
+
 
         <!-- Creating a datalist -->
-        <label for="interest">Please select your area of interest:</label>
+       
+        <li><label for="interest">Please select your area of interest:</label> <br>
         <input list="topic" id="interest" name="interest" required>
         <datalist id="topic">
             <option value="HTML5"></option>
@@ -112,11 +222,12 @@
             <option value="JavaScript"></option>
             <option value="PHP"></option>
             <option value="Full Stack Development"></option>
-
-        </datalist>
-        <br>
-        <hr>
+        </datalist></li>
+    
+    
+        
         <!-- Predefined list of options -->
+      <li>
         <label for="year">Please indicate your current student year:</label><br>
 
         <select id="year" name="year" required>
@@ -127,37 +238,45 @@
             <option value="senior">Senior</option> 
         </select>
 
-        <hr>
-
-        <!--Legend and Fieldset with radio button-->
+        </li></ul>
+        <!--Legend and Fieldset with radio button-->       
         <fieldset>
             <legend>What is your major?</legend>
-
+            
             <input type="radio" id="ict" name="major" value="ICT">
             <label for="ict">ICT</label>
-
+          
             <input type="radio" id="cs" name="major" value="CS">
             <label for="cs">Computer Science</label>
-
+            
             <input type="radio" id="comm" name="major" value="Communications">
             <label for="comm">Communications</label>
-            
+         
         </fieldset>
-
-        <hr>
-
+<ul>
+       
        <!--Text Area-->
-        <h2>Comments and Feedback:</h2>
-        <label for="feedback">Please leave us any additional comments and feedback that you may have.</label><br>
-        <textarea name="comments" id="feedback" rows="5" cols="80"></textarea>
-
-        <br>
-        <input type="submit" value="Submit">
+        <li class="cnf">Comments and Feedback: </li>
+        <li><label for="feedback">Please leave us any additional comments and feedback that you may have.</label> </li>
+       <li> <textarea name="feedback" placeholder="150 characters max..." id="feedback" rows="5" cols="50" maxlength="150"></textarea></li>
+    
+       <li> <input type="submit" value="Submit"></li>
+            </ul>
     </form>
+</div>
+</div>
 
+<footer>
+    <address>
+      <p><u>Contact:</u><br>
+        555 Main St.<br>
+        Lexington, KY 40509<br>
+        Tel: 000-123-4567<br>
+        e-mail: peace@peaceful.inc<br>
+        No Rights Reserved. Learning @PeacefulDesign.inc</p>
+    </address>
 
-    <hr>
-
+  </footer>
     
 </body>
 
