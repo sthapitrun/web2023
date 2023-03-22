@@ -43,7 +43,7 @@ nav {
 
 nav ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-items: center;
     list-style-type: none;
 }
