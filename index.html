@@ -9,6 +9,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">     <!--makes the page mobile friendly. IMPORTANT-->
     <link rel="stylesheet" href="styles/style.css">     <!--enables internal sytling with CSS-->
     <title>Semantic Web Development</title>
+
+    <!-- just a reminder that json+ld last line does not have a comma -->
+    <script type="application/ld+json">
+      
+      { 
+        "@context": "https://schema.org/",
+        "@type": "LearningResource",
+        "educationalLevel": "intermediate",
+        "educationalUse": "assignment",
+        "teaches": "semantic web development",
+        "about": "semantic web",
+        "name": "Semantic Web Development",
+        "audience": "ICT students",
+        "email": "Learning@PeacefulDesign.inc",
+        "creator": "PeacefulDesign",
+        "address": "555 Main St. Lexington, KY 40509",
+        "logo": "images/semanticlogo.png",
+        "inLanguage": "en-US"
+        
+        }
+
+
+    </script>
+
+
+
   </head>
 
   <!-- this is a comment; it's different than how to add CSS comments -->
@@ -114,7 +140,7 @@
         <h3>CSS</h3>
 
         <img srcset="images/css_image-small.png 200w, images/css_image-large.png 500w"
-        sizes="(max-width: 772px) 300px, 500px"  
+        sizes="(max-width: 772px) 200px, 400px"  
         src="images/css_image-large.png"
         alt="graphic of CSS logo with a boy standing infront of a laptop "> 
         <!-- If the max width display is 772px then display 500px image if not display the 300px image --> 
@@ -138,7 +164,49 @@
           save users' data locally on their computers, and much more).<br>
           Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"> mdnwebdocs (External Link)</a>
           
+        <h3>JSON</h3>
+        </p>JSON (JavaScript Object Notation) is a lightweight data-interchange format.
+        It is easy for humans to read and write. It is easy for machines 
+        to parse and generate. It is based on a subset of the JavaScript 
+        Programming Language Standard ECMA-262 3rd Edition - December 1999.<br> 
+        JSON is a text format that is completely language independent but uses 
+        conventions that are familiar to programmers of the C-family of languages, 
+        including C, C++, C#, Java, JavaScript, Perl, Python, and many others. 
+        These properties make JSON an ideal data-interchange language.
+      </p>
+      <p>
+        JSON is built on two structures:<br>
+        
+        <ul><li>A collection of name/value pairs. In various languages, this is realized as an 
+        object, record, struct, dictionary, 
+        hash table, keyed list, or associative array. </li>
+        <li>An ordered list of values. 
+        In most languages, this is realized as an array, vector, list, or sequence.
+      </li></ul>
+        These are universal data structures. Virtually all modern programming 
+        languages support them in one form or another. It makes sense that 
+        a data format that is interchangeable with programming languages also 
+        be based on these structures.<br>
+        Source: <a href="https://www.json.org/json-en.html"> Json.org (External Link)</a>
         </p>
+
+        
+          <h3>JSON-LD</h3>
+          <p>
+          JSON-LD stands for JavaScript Object Notation for Linked Data, which consists of multi-dimensional arrays 
+          (think: list of attribute-value pairs). <br>
+
+          It is an implementation format for structuring data analogous 
+          to Microdata and RDFa. Typically, in terms of SEO, JSON-LD is implemented leveraging the Schema.org vocabulary, 
+          a joint effort by Google, Bing, Yahoo!, and Yandex in 2011 to create a unified structured data vocabulary for the web. 
+          (However, Bing and other search engines have not officially stated their support of JSON-LD implementations of Schema.org.)<br>
+
+          JSON-LD is considered to be simpler to implement, due to the ability to simply paste the markup within the HTML document,
+          versus having to wrap the markup around HTML elements (as one would do with Microdata). <br>
+          Source: <a href="https://moz.com/blog/json-ld-for-beginners">A guide to JSON-LD for beginners (External link)</a>
+          </p>
+
+        
 
         </article>
 
