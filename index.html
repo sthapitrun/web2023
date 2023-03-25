@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 
-  <!-- this is the <head> section; not to be confused with the <header> section -->
+  <!-- this is the head section; not to be confused with the <header> section -->
   <!--Head's job is to contain metadata about the document. Not displayed on the page. -->
     <head>
-    <meta charset="utf-8">
+    <!--adding meta elements provide descriptive info about each page on the site which enhances accessibility and discoverability-->
+
+    <!--This helps browsers display text properly, especially text that uses symbols/non-en char sets-->
+    <meta charset="utf-8">   
     <meta name="description" content="semantic web development test site created by ICT 420 student">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">     <!--makes the page mobile friendly. IMPORTANT-->
-    <link rel="stylesheet" href="styles/style.css">     <!--enables internal sytling with CSS-->
+    <!--makes the page mobile friendly. IMPORTANT-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <meta name="author" content="PeacefulDesign"> 
+    <meta name="keywords" content="HTML, HTML5, CSS, JavaScript, JSON, JSON-LD, Semantic web, Flex, Grid, web development, 
+    world wide web, design,">
+
+    <!-- Open Graph Protocol "ogp" - meta tags used by social media platforms to generate previews when a link to page is shared -->
+    <!-- reference website www.ogp.me to lookup open graph protocol-->
+    <meta property="og:title" content="Semantic Web Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sthapitrun.github.io/web2023/images/semanticlogo.png">
+    <meta property="og:url" content="https://sthapitrun.github.io/web2023/index.html">
+    <meta property="og:description" content="semantic web development test site created by ICT 420 student">
+
+    <!-- Dublin Core - set of metadata standards for describing resources such as webpages, images, videos 
+    below example shows 6 Dublin Core metadata elements out of the 15 elements in DC-->
+    <meta name="DC.title" content="Semantic Web Development">
+    <meta name="DC.creator" content="PeacefulDesign">
+    <meta name="DC.subject" content="semantic web development, html5, css">
+    <meta name="DC.description" content="semantic web development test site created by ICT 420 student">
+    <meta name="DC.publisher" content="Github">
+    <meta name="DC.date" content="2023-03-24">
+    <meta name="DC.language" content="en-US">
+
+
+    <!--enables internal sytling with CSS-->
+    <link rel="stylesheet" href="styles/style.css">     
+
+    <!-- Title of the Page -->
     <title>Semantic Web Development</title>
 
-    <!-- just a reminder that json+ld last line does not have a comma -->
+    <!-- JSON-LD structured data. Just a reminder that json+ld last line does not have a comma -->
     <script type="application/ld+json">
       
       { 
