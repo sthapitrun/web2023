@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="learn html css ICT 420 class">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- enables internal sytling with CSS -->
+  <title>Get In Touch With Us</title>
+
+  <style>
+    html {
+      font-size: 100%;
+      color: #fff;
+    }
+    
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    header h1 {
+      height: 100%;
+      text-align: right;
+      margin-right: 10px;
+      margin-top: 70px;
+    }
+
+    header a {
+      /* header a contains logo image with index.html link - aligned left */
+      height: 100%;
+      margin-left: 10px;
+    }
+
+    header img {
+      height: 30%;
+      /* resizes the image - logo to 30% of original size */
+      margin-top: 10px;
+    }
+
+    nav {
+      padding: .5rem 0 .5rem 0;
+      background-color: #fff;
+    }
+
+    nav ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-items: center;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      padding: .5rem 3rem .5rem 3rem;
+      background-color: #ec9706;
+      border: 2px solid #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    nav ul li a {
+      color: #000;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav ul li:nth-child(even) {
+      background-color: #000;
+    }
+
+    nav ul li:nth-child(even) a {
+      color: #fff;
+    }
+
+    nav ul li:nth-child(even) a:hover {
+      color: #ec9706;
+    }
+
+    .bold {
+      /* targeting span for bold font */
+      font-weight: bolder;
+    }
+
+    h2 {
+      border-top: 2px solid black;
+      color: #8c0000ff;
+      margin: 40px 20px 40px 20px;
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+
+    }
+
+    h2:hover {
+      color: #8c0000ff;
+    }
+
+    .grid-container {
+      /* background-color: #ec9706; */
+      display: grid;
+      /* padding: 0 1rem 0 1rem; */
+      grid-template-columns: auto;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      justify-content: center;
+      text-align: center;
+
+    }
+
+    /* .grid-container>div {
+      background-color: #ec9706;
+      color: #000;
+      padding: 0 10px 0 10px;
+      text-align: center;
+      grid-template-columns: auto;
+
+    } */
+
+    .contact li {
+      list-style-type: none;
+      margin: 5px;
+    }
+
+    input,
+    label {
+      margin: 5px;
+      width: 250px;
+    }
+
+    legend {
+      /* text-align: center; */
+      background-color: black;
+      color: #fff;
+      padding: 10px 10px;
+      font-weight: bolder;
+    }
+
+    fieldset {
+      width: 250px;
+      height: auto;
+      /* white-space: nowrap;  */
+
+      margin: auto;
+      justify-content: center;
+
+    }
+
+    .cnf {
+      padding: 5px;
+      font-weight: bolder;
+      color: #000;
+      text-shadow: 1px 1px 1px #fff;
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html"> <img src="images/logowtxt.png" alt="Lex-Ky Construction LLC logo"> </a>
+      </div>
+      <p>Need a free Roof Inspection:<br>
+        Call us at 859-000-000</p>
+    </div>
+    <div class="navlinks">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+
+
+
+  <div class="grid-container"> <!--Using only one column for simplicity in grid layout-->
+    <div>
+      <h2>Contact Form</h2>
+      <p>Please fill in your information below and
+        <span class="bold">LEX-KY Representative</span><br>
+        will contact you within 24-72 hours via email or phone.
+        <span class="bold">Thank you!</span>
+      </p>
+
+
+
+      <!-- Using post method for the form -->
+
+      <form action="#" method="post" class="contact">
+
+        <ul>
+
+          <li><label for="fname">First name: </label> </li>
+
+          <li><input type="text" name="userinfo" id="fname" required></li>
+
+          <li><label for="lname">Last name: </label> </li>
+
+          <li><input type="text" name="userinfo" id="lname" required> </li>
+
+          <li><label for="phone">Phone No.: </label> </li>
+
+          <li><input type="tel" name="userinfo" id="phone" maxlength="10" placeholder="8590000000"> </li>
+
+          <li><label for="email">Email: </label> </li>
+
+          <li><input type="email" name="userinfo" id="email" required> </li>
+
+
+          <!-- Creating a datalist -->
+
+          <li><label for="interest">What are you interested in?</label> <br>
+            <input list="topic" id="interest" name="interest" required>
+            <datalist id="topic">
+              <option value="Roofing"></option>
+              <option value="Siding"></option>
+              <option value="Gutters"></option>
+              <option value="Lawn Care"></option>
+              <option value="General Repairs"></option>
+            </datalist>
+          </li>
+
+
+
+          <!-- Predefined list of options -->
+          <li>
+            <label for="year">When you you expect to begin your project:</label><br>
+
+            <select id="year" name="year" required>
+              <option value=""> - Please select one - </option>
+              <option value="asap">ASAP</option>
+              <option value="nextweek">Next Week</option>
+              <option value="future">Sometime in Future</option>
+              <option value="dontknow">Don't Know</option>
+            </select>
+
+          </li>
+        </ul>
+        <!--Legend and Fieldset with radio button-->
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+
+          <input type="radio" id="google" name="about" value="google">
+          <label for="google">Google</label>
+
+          <input type="radio" id="friend" name="about" value="friend">
+          <label for="friend">Friend</label>
+
+          <input type="radio" id="ad" name="about" value="advertisement">
+          <label for="ad">Advertisement</label>
+
+        </fieldset>
+        <ul>
+
+          <!--Text Area-->
+          <li class="cnf">Comments and Feedback: </li>
+          <li><label for="feedback">Please leave us any additional comments and feedback that you may have.</label>
+          </li>
+          <li> <textarea name="feedback" placeholder="150 characters max..." id="feedback" rows="5" cols="40"
+              maxlength="150"></textarea></li>
+
+          <li> <input type="submit" value="Submit"></li>
+        </ul>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h3 class="foot">
+      Kentucky Licensed Roofing Gutter Professionals You Can Trust</h3>
+    <div class="contact">
+      <address>
+        <p><u>Contact:</u><br>
+          123 Main St.<br>
+          Lexington, KY 40509<br>
+          Tel: 859-000-000<br>
+          e-mail: admin@lexkyconstruction.llc<br>
+          No Rights Reserved. Lex-KY Construction LLC.</p>
+      </address>
+    </div>
+
+    <div class="socmed">
+
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+
+    </div>
+
+  </div>
+
+</body>
+
+
+</html>

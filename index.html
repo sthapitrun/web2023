@@ -1,289 +1,167 @@
-<!DOCTYPE html>
+<!doctype HTML>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 
-  <!-- this is the head section; not to be confused with the <header> section -->
-  <!--Head's job is to contain metadata about the document. Not displayed on the page. -->
-    <head>
-    <!--adding meta elements provide descriptive info about each page on the site which enhances accessibility and discoverability-->
-
-    <!--This helps browsers display text properly, especially text that uses symbols/non-en char sets-->
-    <meta charset="utf-8">   
-    <meta name="description" content="semantic web development test site created by ICT 420 student">
-    <!--makes the page mobile friendly. IMPORTANT-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-    <meta name="author" content="PeacefulDesign"> 
-    <meta name="keywords" content="HTML, HTML5, CSS, JavaScript, JSON, JSON-LD, Semantic web, Flex, Grid, web development, 
-    world wide web, design,">
-
-    <!-- Open Graph Protocol "ogp" - meta tags used by social media platforms to generate previews when a link to page is shared -->
-    <!-- reference website www.ogp.me to lookup open graph protocol-->
-    <meta property="og:title" content="Semantic Web Development">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://sthapitrun.github.io/web2023/images/semanticlogo.png">
-    <meta property="og:url" content="https://sthapitrun.github.io/web2023/index.html">
-    <meta property="og:description" content="semantic web development test site created by ICT 420 student">
-
-    <!-- Dublin Core - set of metadata standards for describing resources such as webpages, images, videos 
-    below example shows 6 Dublin Core metadata elements out of the 15 elements in DC-->
-    <meta name="DC.title" content="Semantic Web Development">
-    <meta name="DC.creator" content="PeacefulDesign">
-    <meta name="DC.subject" content="semantic web development, html5, css">
-    <meta name="DC.description" content="semantic web development test site created by ICT 420 student">
-    <meta name="DC.publisher" content="Github">
-    <meta name="DC.date" content="2023-03-24">
-    <meta name="DC.language" content="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="lexington ky construction llc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="PeacefulDesign">
+  <meta name="keywords" content="roof, roofing, gutters, spouts, lexington, ky, fast, service">
+  <link rel="stylesheet" href="styles/stylesheet.css">
+  <!--Icon Library !-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Lex-KY Construction LLC</title>
 
 
-    <!--enables internal sytling with CSS-->
-    <link rel="stylesheet" href="styles/style.css">     
+</head>
 
-    <!-- Title of the Page -->
-    <title>Semantic Web Development</title>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html"> <img src="images/logowtxt.png" alt="Lex-Ky Construction LLC logo"> </a>
+      </div>
+      <p>Need a free Roof Inspection:<br>
+        Call us at 859-000-000</p>
+    </div>
+    <div class="navlinks">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
 
-    <!-- JSON-LD structured data. Just a reminder that json+ld last line does not have a comma -->
-    <script type="application/ld+json">
-      
-      { 
-        "@context": "https://schema.org/",
-        "@type": "LearningResource",
-        "educationalLevel": "intermediate",
-        "educationalUse": "assignment",
-        "teaches": "semantic web development",
-        "about": "semantic web",
-        "name": "Semantic Web Development",
-        "audience": {
-    		    "@type": "EducationalAudience",
-    		    "educationalRole": "student"
-  			            },
-        "creator": "PeacefulDesign",
-        "inLanguage": "en-US", 
-        "url": "https://sthapitrun.github.io/web2023/"
-        }
+  </header>
 
+  <!-- navigation 
+    <div class="header">
+            <h1 class="logo"><a href="index.html"> <img src="images/logowtxt.png" alt="Lex-Ky Construction LLC logo">  </a></h1>
+            <h2>Need a free Roof Inspection:<br> 
+             Call us at 859-000-000</h2>
+        </div>
 
-    </script>
+  <div class="navbar">
+            <nav class="navbar">
+            <ul>
+                <li class="nav-1"><a href="index.html">Home</a></li>
+                <li class="nav-2"><a href="services.html">Services</a></li>
+                <li class="nav-3"><a href="aboutus.html">About Us</a></li>
+                <li class="nav-4"><a href="contact.html">Get Started</a></li>
+            </ul>
+        </nav>
+      </div> -->
 
+  <section>
+    <h2> Our Accreditations:</h2>
+    <div class="container">
+      <div class="con1">
+        <img src="images/gaf.png" alt="Gaf weather stopper roofing contractor certification logo" id="img1">
+      </div>
+      <div class="con2">
+        <img src="images/bbb.png" alt="Gaf weather stopper roofing contractor certification logo" id="img2">
+      </div>
+      <div class="con3">
+        <img src="images/selshi.png" alt="Gaf weather stopper roofing contractor certification logo" id="img3">
+      </div>
 
-
-  </head>
-
-  <!-- this is a comment; it's different than how to add CSS comments -->
-
-  <!-- the <body> element comes immediately after the closing </head> -->
-
-  <body>
-    <!-- new section for <header>, which contains <h1>, <a>, and <img> elements -->
-    <header>
-      <a href="index.html">
-        <img src="images/semanticlogo.png" alt="Semantic Web Development Logo">
-      </a>
-      <h1 id="title">Learning to build</h1>
-    </header>
-
-  <!-- new section for <nav>, which contains <ul> and <li> elements -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="getstarted.html">Get Started</a></li>
-      <li><a href="ungrid.html">Understanding Grid</a></li>
-      <li><a href="flex.html">Flex Test</a></li>
-      <li><a href="images.html">Images Example</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-    </ul>
-  </nav>
-  
-  
-    <!-- the <div> wraps around all elements below except for the <footer> element -->
-    <div class="wrapper">
-
-      <!-- this is the first of two <section> elements on this page -->
-      <section id="primary">
-
-        <!-- this is the first of two <article> elements on this page. Each
-        <article> element is in its own <section>. In practice, this might be
-        redundant; that is, you can either use an <article> or a <section>
-        element and may not need both. -->
-        
-        <article id="main_article">
-
-        <h2>Introduction</h2>
-        <p>The term “Semantic Web” refers to W3C's vision of the Web of linked data. 
-        Semantic Web technologies enable people to create data stores on the Web, 
-        build vocabularies, and write rules for handling data.</p>
-
-        <p>The Semantic Web is a vision about an extension of the existing World Wide Web, 
-        which provides software programs with machine-interpretable metadata of the 
-        published information and data. In other words, we add further data descriptors 
-        to otherwise existing content and data on the Web.</p>
-
-        <p>
-          What is Semantic Web used for?<br>
-          The Semantic Web aims to enrich the Web with a layer of machine-interpretable metadata
-           so that computer programs can predictably derive new information. This goal
-            will require the development of metadata syntax and vocabularies, and 
-            the creation of metadata for lots of Web pages.
-        </p>
-
-        <!-- it's good practice to include a header for each <section> or <article> -->
-        
-          <h3>What will we learn?</h3>
-        <p>This course introduces students to web development with the goal of designing a
-        website containing structured and semantic data and that adheres to principles 
-        of usability, accessibility, and inclusion. By the end of this course, 
-        students will acquire skills at planning, developing, organizing, and
-        managing websites in HTML5 and CSS3 and will develop an understanding of
-        basic design principles and project management.</p>
-          <ul>
-            <li>How Semantic Web technology fits into the past, present, and future evolution of the Internet.</li>
-            <li>How Semantic Web technology differs from existing data management technologies, such as relational 
-                databases and the current state of the World Wide Web.</li>
-            <li>The three primary international standards that help encode the Semantic Web.</li>
-          </ul>
-
-        
-        </article>
-
-        <!-- be sure to use alt and title for images -->
-        
-        <figure id="html5outline"> 
-          <p>Semantic Elements for Document Outlining:</p>
-          <img src="images/html5outline.jpeg" alt="Image of Semantic Elements for Document Outlining">
-          <figcaption> 
-            <!--figcaption element represents a caption or legend describing the rest of the contents of its parent <figure> element. -->
-            <a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">Source: Codeopen.io</a>
-          </figcaption>
-        </figure>
-      
-      </section>
-
-      <section id="secondary">
-
-        <h2>HTML - Structuring the web</h2>
-
-        <article id="sub_article">
-
-        <p>To build websites, you should know about HTML — the fundamental technology used to 
-          define the structure of a webpage. <q><i><b> HTML is used to specify whether your web content 
-          should be recognized as a paragraph, list, heading, link, image, multimedia player, 
-          form, or one of many other available elements or even a new element that you define.</b></i></q>
-        </p>
-
-        <h3>CSS</h3>
-
-        <img srcset="images/css_image-small.png 200w, images/css_image-large.png 500w"
-        sizes="(max-width: 772px) 200px, 400px"  
-        src="images/css_image-large.png"
-        alt="graphic of CSS logo with a boy standing infront of a laptop "> 
-        <!-- If the max width display is 772px then display 500px image if not display the 300px image --> 
+    </div>
+  </section>
 
 
-          <!-- 
-*******************   FOR PRACTICE       ******************
-            <img class="image-style"
-        srcset="images/css_image-small.png 200w, images/css_image-large.png 500w"
-        sizes="(max-width: 400px) 200px, 500px"
-        alt="graphic of CSS logo with a boy standing infront of a laptop "
-        src="images/css_image-large.png"> -->
+  <div class="wrapper">
+    <section id="primary">
+      <h2>Welcome to</h2>
+      <h1>Lex-KY Construction LLC </h1>
+      <h3>For all your roofing, siding and gutter services</h3>
 
-
-        <p>
-          After learning HTML, you can then move on to learning about more advanced topics such as: 
-          CSS, and how to use it to style HTML (for example, alter your text size and fonts used, 
-          add borders and drop shadows, layout your page with multiple columns, add animations and other visual effects).
-          JavaScript, and how to use it to add dynamic functionality to web pages (for example, 
-          find your location and plot it on a map, make UI elements appear/disappear when you toggle a button, 
-          save users' data locally on their computers, and much more).<br>
-          Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"> mdnwebdocs (External Link)</a>
-          
-        <h3>JSON</h3>
-        <p>JSON (JavaScript Object Notation) is a lightweight data-interchange format.
-        It is easy for humans to read and write. It is easy for machines 
-        to parse and generate. It is based on a subset of the JavaScript 
-        Programming Language Standard ECMA-262 3rd Edition - December 1999.<br> 
-        JSON is a text format that is completely language independent but uses 
-        conventions that are familiar to programmers of the C-family of languages, 
-        including C, C++, C#, Java, JavaScript, Perl, Python, and many others. 
-        These properties make JSON an ideal data-interchange language.
+      <p id="p_1">
+        Locally Owned - Proudly serving Kentucky since 1995.
       </p>
+
       <p>
-        JSON is built on two structures:<br>
-        
-        <ul><li>A collection of name/value pairs. In various languages, this is realized as an 
-        object, record, struct, dictionary, 
-        hash table, keyed list, or associative array. </li>
-        <li>An ordered list of values. 
-        In most languages, this is realized as an array, vector, list, or sequence.
-      </li></ul>
-        These are universal data structures. Virtually all modern programming 
-        languages support them in one form or another. It makes sense that 
-        a data format that is interchangeable with programming languages also 
-        be based on these structures.<br>
-        Source: <a href="https://www.json.org/json-en.html"> Json.org (External Link)</a>
-       
+        At Lex-KY LLC, we have a dedication to professionalism and
+        quality workmanship that’s virtually unmatched.
+        We’re proud to be the largest and highest-rated
+        roofing company in Central Kentucky.
+        The personal attention
+        and eye to detail we bring to each and every one of our
+        jobs has made us trusted by thousands of homeowners
+        in Lexington, KY. Find out why our roofing company
+        has been rated A+ with the Better Business Bureau
+        for our residential and commercial roofing, siding
+        and gutter services.
+      </p>
+    </section>
 
-        
-          <h3>JSON-LD</h3>
-          <p>
-          JSON-LD stands for JavaScript Object Notation for Linked Data, which consists of multi-dimensional arrays 
-          (think: list of attribute-value pairs). <br>
+    <section id="secondary">
+      <figure id="roof">
+        <h4>Roof Installation Project at Lexington KY</h4>
 
-          It is an implementation format for structuring data analogous 
-          to Microdata and RDFa. Typically, in terms of SEO, JSON-LD is implemented leveraging the Schema.org vocabulary, 
-          a joint effort by Google, Bing, Yahoo!, and Yandex in 2011 to create a unified structured data vocabulary for the web. 
-          (However, Bing and other search engines have not officially stated their support of JSON-LD implementations of Schema.org.)<br>
+        <img srcset="images/roof_small.png 200w, 
+            images/roof.png 500w" sizes="(max-width: 800px) 200px, 500px" src="images/roof.png"
+          alt="A picture of a house with new roof">
 
-          JSON-LD is considered to be simpler to implement, due to the ability to simply paste the markup within the HTML document,
-          versus having to wrap the markup around HTML elements (as one would do with Microdata). <br>
-          Source: <a href="https://moz.com/blog/json-ld-for-beginners">A guide to JSON-LD for beginners (External link)</a>
-          </p>
+        <!-- <img src="images/roof.png" alt="Image of a new house roof"> -->
+
+        <figcaption>
+          <!--figcaption element represents a caption or legend describing the rest of the contents of its parent <figure> element. -->
+          <a href="#">Call for Free Estimate</a>
+        </figcaption>
+      </figure>
+    </section>
+  </div>
+
+  <section>
+    <div>
+      <h1 id="gafh">GAF Shingle Roof Warranty</h1>
+    </div>
+
+  </section>
+
+  <div class="shingles">
+  </div>
+
+  <div class="gaf">
+    <section id="shin">
+      <h4>We Protect What Matters Most</h4>
+      <p>
+        When you invest in a new roof, you expect that roof to last. But sometimes there are issues that have arisen
+        during the manufacturing or installation process that are not discovered until after your roof has been on your
+        home for a while. Understanding the different warranty options available to you before you purchase your new
+        roof is vital.
+      </p>
+    </section>
+  </div>
 
 
-          <h3>Meta Tags</h3>
-          <p>
-            Meta tags are snippets of text that describe a page's content; 
-            the meta tags don't appear on the page itself, but only in the page's 
-            source code. Meta tags are essentially little content descriptors that help 
-            tell search engines what a web page is about.<br>
-          The only difference between tags you can see (on a blogpost, say) 
-          and tags you can't see is location: meta tags only exist in HTML,
-           usually at the “head” of the page, and so are only visible to search 
-           engines (and people who know where to look). The “meta” 
-           stands for “metadata,” which is the kind of data these tags provide
-          - data about the data on your page.
-          
-            <br>
-          Source: <a href="https://www.wordstream.com/meta-tags">Meta Tags (External link)</a>
-          </p>
-
-        
-
-        </article>
-
-      </section>
-
-      
-
-    </div> <!-- wrapper -->
-
-    <!-- the <footer> can contain more than an address, but this
-    is a useful place to include it. -->
-
-    <footer>
+  <div class="footer">
+    <h3 class="foot">
+      Kentucky Licensed Roofing Gutter Professionals You Can Trust</h3>
+    <div class="contact">
       <address>
         <p><u>Contact:</u><br>
-          555 Main St.<br>
+          123 Main St.<br>
           Lexington, KY 40509<br>
-          Tel: 000-123-4567<br>
-          e-mail: peace@peaceful.inc<br>
-          No Rights Reserved. Learning @PeacefulDesign.inc</p>
+          Tel: 859-000-000<br>
+          e-mail: admin@lexkyconstruction.llc<br>
+          No Rights Reserved. Lex-KY Construction LLC.</p>
       </address>
+    </div>
 
-    </footer>
+    <div class="socmed">
 
-    <script src="scripts/darkmode.js">
-      
-    </script>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
 
-   <!-- be sure to close the </body> and the </html> elements at the end -->
-  </body>
+    </div>
+
+  </div>
+
+</body>
+
 </html>
