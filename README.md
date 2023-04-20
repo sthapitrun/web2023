@@ -1,3 +1,1 @@
-# web2022
-
-Basic website template.
+# Lex-KY Construction LLC Website
