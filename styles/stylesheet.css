@@ -117,6 +117,7 @@ h1 {
   align-items: center;
   justify-items: center;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .container {
@@ -530,7 +531,7 @@ fieldset {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
-  
+
 
 }
 
@@ -552,13 +553,14 @@ fieldset {
 
 }
 
-.service_area .h2 {
+.service_area h3 {
   text-align: center;
   justify-content: center;
   justify-items: center;
-  width: 200px;
+  /* width: 200px; */
   height: auto;
   font-size: 2rem;
+  color: #8c0000ff;
 }
 
 .service_area img {
